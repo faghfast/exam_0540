@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+			integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="shortcut icon" href="/img/icon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://kit.fontawesome.com/d2cc7a3448.js" crossorigin="anonymous"></script>
+		<title>Изделия из кожи</title>
+	</head>
+
+	<body>
+		<!-- start navbar -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="/index.html">Grondstof</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Переключатель навигации"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="/index.html"
+								>Главная <span class="sr-only">(текущая)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/works.html">Наши работы</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/news.html">Новости</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/contacts.html">Конттакты</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- end navbar -->
+
+		<!-- slider start -->
+
+		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="/img/slide/slide1.jpg" class="d-block w-100" alt="slide1" />
+				</div>
+				<div class="carousel-item">
+					<img src="/img/slide/slide2.jpg" class="d-block w-100" alt="slide2" />
+				</div>
+				<div class="carousel-item">
+					<img src="/img/slide/slide3.jpg" class="d-block w-100" alt="slide3" />
+				</div>
+				<div class="carousel-item">
+					<img src="/img/slide/slide4.jpg" class="d-block w-100" alt="slide3" />
+				</div>
+				<a
+					class="carousel-control-prev"
+					href="#carouselExampleIndicators"
+					role="button"
+					data-slide="prev"
+				>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Предыдущий</span>
+				</a>
+				<a
+					class="carousel-control-next"
+					href="#carouselExampleIndicators"
+					role="button"
+					data-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Следующий</span>
+				</a>
+			</div>
+		</div>
+		<!-- slider end -->
+
+		<!-- card my start -->
+
+		<div class="jumbotron text-center">
+			<h1 class="display-4">Grondstof — небольшая мастерская по производству кожаных изделий.</h1>
+			<p class="lead">
+				Мы делаем наши вещи в очень ограниченных количествах из натуральной кожи высшего качества.
+			</p>
+			<p>
+				Добро пожаловать в круг друзей, мы с нетерпением ждем возможности сделать что-нибудь для
+				вас.
+			</p>
+			<a class="btn btn-primary btn-lg" href="/contacts.html" role="button">Узнать больше</a>
+			<hr class="my-4" />
+			<p>Следите за жизнью мастерской в соцсетях</p>
+			<p>
+				<i class="fa-brands fa-vk fa-7x m-3" onclick="goUrl(vk)"></i>
+				<i class="fa-brands fa-instagram fa-7x m-3" onclick="goUrl(inst)"></i>
+				<i class="fa-brands fa-facebook fa-7x m-3" onclick="goUrl(face)"></i>
+				<i class="fa-brands fa-telegram fa-7x m-3" onclick="goUrl(tele)"></i>
+			</p>
+		</div>
+		<!-- card my end -->
+
+		<!-- card news start -->
+		<div class="card-group cardNews">
+			<div class="card">
+				<img src="/img/cardBar/1.jpg" class="card-img-top" alt="1" />
+				<div class="card-body">
+					<h5 class="card-title">Корейские ученые создали искусственную кожу, меняющую цвет</h5>
+					<p class="card-text">
+						В Сеульском национальном университете разработали «мягкого биометрического
+						робота-хамелеона» — проще говоря, «искусственную кожу», которая меняет цвет в
+						зависимости от окружающей обстановки.
+					</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">14 сент. 2021 г.</small>
+				</div>
+			</div>
+			<div class="card">
+				<img src="/img/cardBar/2.jpg" class="card-img-top" alt="2" />
+				<div class="card-body">
+					<h5 class="card-title">
+						Учебный центр по изготовлению изделий из кожи открылся в Новосибирске
+					</h5>
+					<p class="card-text">
+						Образовательный центр по технологической обработке кожи открылся на базе Новосибирского
+						технологического института (НТИ). В центре будут обучаться студенты института, а также
+						те, кто захочет овладеть технологией обработки кожи для старта собственного малого
+						бизнеса
+					</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">20 февр. 2018 г.</small>
+				</div>
+			</div>
+			<div class="card">
+				<img src="/img/cardBar/3.jpg" class="card-img-top" alt="3" />
+				<div class="card-body">
+					<h5 class="card-title">
+						В I полугодии 2017 г объем рынка кожаной одежды составил 5,4 млрд. руб.
+					</h5>
+					<p class="card-text">
+						В I пол. 2017 году импорт кожаной одежды в Россию составил 297,7 тонн или 34,7 млн.
+						долл.
+					</p>
+				</div>
+				<div class="card-footer">
+					<small class="text-muted">10 окт. 2017 г.</small>
+				</div>
+			</div>
+		</div>
+		<!-- card news end -->
+
+		<!-- scrollBtn start -->
+		<div><i class="fa-solid fa-square-caret-up fa-5x" id="scrollBtn"></i></div>
+		<script>
+			let scrollBtn = document.getElementById("scrollBtn");
+			document.addEventListener("scroll", function (event) {
+				scrollBtn.style.display = "none";
+				if (window.scrollY > document.documentElement.clientHeight / 10) {
+					scrollBtn.style.display = "block";
+				}
+			});
+
+			scrollBtn.addEventListener("click", function (event) {
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
+				});
+			});
+		</script>
+		<!-- scrollBtn end -->
+
+		<script>
+			let vk = "https://vk.com/";
+			let inst = "https://www.instagram.com/";
+			let face = "https://ru-ru.facebook.com/";
+			let tele = "https://web.telegram.org/";
+
+			function goUrl(url) {
+				if (url == vk) {
+					window.open(vk, "_blank");
+				} else if (url == inst) {
+					window.open(inst, "_blank");
+				} else if (url == face) {
+					window.open(face, "_blank");
+				} else if (url == tele) {
+					window.open(tele, "_blank");
+				}
+			}
+		</script>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
